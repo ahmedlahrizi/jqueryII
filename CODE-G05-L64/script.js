@@ -39,7 +39,7 @@ function onLeave() {
         rand[Math.ceil(Math.random() * 15)] +
         rand[Math.ceil(Math.random() * 15)];
     $(`p:nth-child(${Current_hidden_object})`).css({
-        "background-color:": new_color,
+        "backgroundColor:": new_color,
     });
     console.log("Changed color to ", new_color);
 }
