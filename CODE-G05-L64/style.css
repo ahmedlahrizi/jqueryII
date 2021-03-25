@@ -1,3 +1,18 @@
-p{
-    background-color:aquamarine
+p:nth-child(1){
+    background-color:aquamarine;
+}
+p:nth-child(2)
+{
+    background-color:darkkhaki;
+}
+p:nth-child(3){
+    background-color:orange;
+}
+
+p:nth-child(4){
+    background-color:yellowgreen;
+}
+p:nth-child(5)
+{
+    background-color:rgb(93, 100, 196);
 }
