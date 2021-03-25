@@ -1,6 +1,9 @@
 p:nth-child(1){
     background-color:aquamarine;
 }
+p:nth-child(1):hover{
+    background-color:coral;
+}
 p:nth-child(2)
 {
     background-color:darkkhaki;

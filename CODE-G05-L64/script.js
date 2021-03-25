@@ -12,7 +12,38 @@ function onEnter() {
 function onLeave() {
     $(`p:nth-child(${Current_hidden_object})`).show();
     console.log("Showed paragraph number", Current_hidden_object);
+    var rand = [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+    ];
+    var new_color =
+        "#" +
+        rand[Math.ceil(Math.random() * 15)] +
+        rand[Math.ceil(Math.random() * 15)] +
+        rand[Math.ceil(Math.random() * 15)] +
+        rand[Math.ceil(Math.random() * 15)] +
+        rand[Math.ceil(Math.random() * 15)] +
+        rand[Math.ceil(Math.random() * 15)];
+    $(`p:nth-child(${Current_hidden_object})`).css({
+        "background-color:": new_color,
+    });
+    console.log("Changed color to ", new_color);
 }
+
 function onReady() {
     $("p:nth-child(1)").mouseenter(onEnter);
     $("p:nth-child(1)").mouseleave(onLeave);
