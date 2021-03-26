@@ -1,19 +1,67 @@
 <!DOCTYPE html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <html>
     <head>
-        <link rel="stylesheet" href="./style.css">
+        <title>Test jQuery</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+        />
         <!-- Importing Jquery and my local script -->
-        <script src="../jquery_slim.js" ></script>
+        <script src="../jquery_slim.js"></script>
         <script src="./script.js"></script>
     </head>
 
+    <nav class="navbar has-background-danger-light has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img
+                    src="./logo.png"
+                    alt="site_logo"
+                    style="max-height: 70px"
+                    class="py-2 px-2"
+                />
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
 
-    <body>
-        <p id="p1"> My paragraph 1</p>
-        <p id="p2"> My paragraph 2</p>
-        <p id="p3"> My paragraph 3</p>
-        <p id="p4"> My paragraph 4</p>
-        <p id="p5"> My paragraph 5</p>
-    </body>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item">Reset</a>
+                <a class="navbar-item">Hide all</a>
+            </div>
+        </div>
+    </nav>
 
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <p id="p1">My paragraph<br />1</p>
+                </div>
+                <div class="column">
+                    <p id="p2">My paragraph<br />2</p>
+                </div>
+                <div class="column">
+                    <p id="p3">My paragraph<br />3</p>
+                </div>
+                <div class="column">
+                    <p id="p4">My paragraph<br />4</p>
+                </div>
+                <div class="column">
+                    <p id="p5">My paragraph<br />5</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </html>
