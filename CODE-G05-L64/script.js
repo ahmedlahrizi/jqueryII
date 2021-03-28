@@ -12,14 +12,7 @@ function onClick() {
     // No need to use Var because it's will be a global variable
     Current_hidden_object_number = randomInt(1, 5);
     // true is visible (hide) false is hidden (show and change set random color)
-    var paragraphs = document.getElementsByTagName("p");
-    for (var i = 0; paragraphs.length; i++) {
-        console.log(
-            i,
-            paragraphs[i],
-            paragraphs[i].style,
-            paragraphs[i].style.visibility
-        );
+    for (var i = 0; i < paragraphs.length; i++) {
         if (paragraphs[i].style.visibility === "hidden") {
             Current_paragraph = paragraphs[i];
             Current_paragraph.style.background = randomNewColor();

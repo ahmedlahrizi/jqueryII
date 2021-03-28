@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Test jQuery</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+        />
+        <!-- <script
+            crossorigin
+            src="https://unpkg.com/react@16/umd/react.development.js"
+        ></script>
+        <script
+            crossorigin
+            src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+        ></script> -->
+        <!-- Importing Jquery and my local script -->
+        <!-- <script src="../jquery_slim.js" defer></script> -->
+        <script src="./index.js"></script>
+        <!-- <script src="./reactapp.js"></script> -->
+    </head>
+
+    <body>
+        <nav class="navbar has-background-danger-light has-shadow">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img
+                        src="./logo.png"
+                        alt="site_logo"
+                        style="max-height: 70px"
+                        class="py-2 px-2"
+                    />
+                </a>
+                <a class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="nav-links">
+                <div class="navbar-end">
+                    <a class="navbar-item" id="reset">Reset</a>
+                    <a class="navbar-item" id="hide-all">Hide all</a>
+                    <a class="navbar-item" id="show-all">Show all</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <p id="p1">My paragraph<br />1</p>
+                    </div>
+                    <div class="column">
+                        <p id="p2">My paragraph<br />2</p>
+                    </div>
+                    <div class="column">
+                        <p id="p3">My paragraph<br />3</p>
+                    </div>
+                    <div class="column">
+                        <p id="p4">My paragraph<br />4</p>
+                    </div>
+                    <div class="column">
+                        <p id="p5">My paragraph<br />5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="app"></section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <h6>
+                        <strong>Color WebSite</strong> by <a>Lahrizi Ahmed</a>.
+                        This is the worst idea i ever had in my life
+                    </h6>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
